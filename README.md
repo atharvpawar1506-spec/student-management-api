@@ -202,8 +202,7 @@ The student record was successfully created and stored in DynamoDB.
 
 ### 📸 Evidence
 
-<img width="1842" height="175" alt="01-post" src="https://github.com/user-attachments/assets/c311200f-e62e-423c-8b92-1f3d17a6e11e" />
-
+![POST Create Student](Screenshots/01-post.jpg)
 
 ---
 
@@ -227,8 +226,7 @@ The API successfully retrieved student records stored in DynamoDB.
 
 ### 📸 Evidence
 
-<img width="1447" height="116" alt="02-get-all" src="https://github.com/user-attachments/assets/64014932-dda9-4118-8d08-65905ce07700" />
-
+![GET All Students](Screenshots/02-get-all.jpg)
 
 ---
 
@@ -252,8 +250,7 @@ The API successfully retrieved the student record with ID `101`.
 
 ### 📸 Evidence
 
-<img width="1285" height="109" alt="03-get-by-id" src="https://github.com/user-attachments/assets/abc7863b-319d-4f5c-a85e-6a85480578c2" />
-
+![GET Student by ID](Screenshots/03-get-by-id.jpg)
 
 ---
 
@@ -290,8 +287,7 @@ The existing student record was successfully updated in DynamoDB.
 
 ### 📸 Evidence
 
-<img width="1887" height="156" alt="04-put-update" src="https://github.com/user-attachments/assets/c6222b0f-f500-47da-bef3-592329b2d1d9" />
-
+![PUT Update Student](Screenshots/04-put-update.jpg)
 
 ---
 
@@ -315,8 +311,7 @@ Student `101` was successfully deleted from DynamoDB.
 
 ### 📸 Evidence
 
-<img width="997" height="115" alt="05-delete" src="https://github.com/user-attachments/assets/6d232538-ac33-4ce6-ae9e-78ea06867665" />
-
+![DELETE Student](Screenshots/05-delete.jpg)
 
 ---
 
@@ -346,8 +341,7 @@ curl -X GET "https://78rg6h77qi.execute-api.us-east-1.amazonaws.com/students"
 
 ### 📸 Evidence
 
-<img width="991" height="112" alt="06-final-get" src="https://github.com/user-attachments/assets/31ed2ee7-674b-495c-b55f-1df893f17981" />
-
+![Final GET](Screenshots/06-final-get.jpg)
 
 ---
 
@@ -378,8 +372,7 @@ Partition Key : id
 Capacity Mode : On-Demand
 ```
 
-<img width="1920" height="958" alt="07-dynamodb" src="https://github.com/user-attachments/assets/62bab4d4-947e-4fce-92e1-90de3c9aa0c8" />
-
+![DynamoDB Student Table](Screenshots/07-dynamodb.jpg)
 
 ---
 
@@ -393,8 +386,7 @@ AWS Lambda contains the backend logic that processes API Gateway requests and pe
 StudentManagementFunction
 ```
 
-<img width="1920" height="964" alt="08-lambda" src="https://github.com/user-attachments/assets/36b1aeed-8387-489b-a777-203bf90a992b" />
-
+![AWS Lambda Function](Screenshots/08-lambda.jpg)
 
 ---
 
@@ -407,13 +399,12 @@ API Gateway provides the HTTP endpoints that expose the student management funct
 ```text
 POST   /students
 GET    /students
-GET    /{id}
-PUT    /{id}
-DELETE /{id}
+GET    /students/{id}
+PUT    /students/{id}
+DELETE /students/{id}
 ```
 
-<img width="1920" height="958" alt="09-api-gateway" src="https://github.com/user-attachments/assets/7e4ce832-accf-4346-83f8-bfe79250b476" />
-
+![API Gateway](Screenshots/09-api-gateway.jpg)
 
 ---
 
@@ -427,15 +418,15 @@ student-management-api/
 ├── .gitignore
 │
 └── Screenshots/
-    ├── 01-post.png
-    ├── 02-get-all.png
-    ├── 03-get-by-id.png
-    ├── 04-put-update.png
-    ├── 05-delete.png
-    ├── 06-final-get.png
-    ├── 07-dynamodb.png
-    ├── 08-lambda.png
-    └── 09-api-gateway.png
+    ├── 01-post.jpg
+├── 02-get-all.jpg
+├── 03-get-by-id.jpg
+├── 04-put-update.jpg
+├── 05-delete.jpg
+├── 06-final-get.jpg
+├── 07-dynamodb.jpg
+├── 08-lambda.jpg
+└── 09-api-gateway.jpg
 ```
 
 ---
