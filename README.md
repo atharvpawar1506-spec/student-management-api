@@ -331,13 +331,9 @@ GET /students
 curl -X GET "https://78rg6h77qi.execute-api.us-east-1.amazonaws.com/students"
 ```
 
-### Expected Result
+### Result
 
-```json
-{
-  "students": []
-}
-```
+The API was used to verify that student `101` was removed successfully.
 
 ### 📸 Evidence
 
@@ -419,14 +415,14 @@ student-management-api/
 │
 └── Screenshots/
     ├── 01-post.jpg
-├── 02-get-all.jpg
-├── 03-get-by-id.jpg
-├── 04-put-update.jpg
-├── 05-delete.jpg
-├── 06-final-get.jpg
-├── 07-dynamodb.jpg
-├── 08-lambda.jpg
-└── 09-api-gateway.jpg
+    ├── 02-get-all.jpg
+    ├── 03-get-by-id.jpg
+    ├── 04-put-update.jpg
+    ├── 05-delete.jpg
+    ├── 06-final-get.jpg
+    ├── 07-dynamodb.jpg
+    ├── 08-lambda.jpg
+    └── 09-api-gateway.jpg
 ```
 
 ---
